@@ -13,7 +13,7 @@ by ajiputra
 ## Install cepat
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/USERNAME_GITHUB/luci-app-myfm/main/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/ajiputra001/luci-app-myfm/main/install.sh | sh
 chmod +x build.sh
 ./build.sh
 apk add --allow-untrusted /tmp/luci-app-myfm.apk
