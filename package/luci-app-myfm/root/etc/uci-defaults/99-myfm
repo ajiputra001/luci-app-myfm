@@ -1,0 +1,16 @@
+#!/bin/sh
+
+uci -q set uhttpd.main.interpreter='.php=/usr/bin/php-cgi'
+uci -q commit uhttpd
+
+[ -f /etc/config/myfm ] || cat > /etc/config/myfm <<'EOC'
+config myfm 'main'
+	option enabled '1'
+	option title 'My File Manager by ajiputra'
+	option root_path '/'
+	option web_dir '/www/myfm'
+EOC
+
+/etc/init.d/uhttpd restart
+
+exit 0

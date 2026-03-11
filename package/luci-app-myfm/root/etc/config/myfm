@@ -1,0 +1,5 @@
+config myfm 'main'
+	option enabled '1'
+	option title 'My File Manager by ajiputra'
+	option root_path '/'
+	option web_dir '/www/myfm'

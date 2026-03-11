@@ -1,0 +1,11 @@
+{
+  "luci-app-myfm": {
+    "description": "Grant access to My File Manager LuCI page by ajiputra",
+    "read": {
+      "uci": [ "myfm" ]
+    },
+    "write": {
+      "uci": [ "myfm" ]
+    }
+  }
+}
